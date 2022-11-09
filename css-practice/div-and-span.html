@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Divs And Spans</title>
+    <!--
+      In style tag style body to add css properties
+
+      In thie example we changed the background & text color
+    -->
+    <style>
+      body {
+        background-color: #f5f5ff;
+        color: midnightblue;
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav li {
+        display: inline-block;
+        margin: 10px;
+        font-size: 20px;
+      }
+
+      .navlink {
+        margin: 4px;
+        padding: 5px;
+        border: 2px solid black;
+        background-color: #191970;
+        color: #f5f5ff;
+      }
+
+      /*
+        text-align: center makes text center
+        font-size changes size
+      */
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+
+      div {
+        background-color: #d4ebf2;
+        margin: auto;
+        width: 65%;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 24px;
+        color: #313131;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        font-size: 20px;
+        margin: 10px;
+      }
+
+      #styled-by-id {
+        font-family: Georgia, "Times New Roman", Cambria, serif;
+        font-weight: bold;
+      }
+
+      span {
+        text-decoration: underline;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="navlink">Inline css</a></li>
+        <li><a href="internal-css.html" class="navlink">Internal css</a></li>
+        <li><a href="external-css.html" class="navlink">External css</a></li>
+        <li>
+          <a href="testing-cascading.html" class="navlink">
+            Testing Cascading
+          </a>
+        </li>
+        <li>
+          <a href="classes-and-ids.html" class="navlink">Classes And IDs</a>
+        </li>
+        <li><a href="div-and-span.html" class="navlink">Divs And Spans</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Divs And Spans</h1>
+
+      <!-- Note not proper div due to no use of all semantic tags-->
+      <div>
+        <p>This page shows the effects of adding internal css to web page.</p>
+
+        <p>Does this paragraph have the same styling as my other paragraph</p>
+
+        <p id="styled-by-id">
+          This paragraph will show the effect of giving an element an ID and
+          <span>styling</span>.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

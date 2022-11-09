@@ -1,0 +1,17 @@
+body {
+  background-color: #f5f5ff;
+  color: midnightblue;
+}
+
+/*
+  text-align: center makes text center
+  font-size changes size
+*/
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  font-size: 24px;
+}
